@@ -7,3 +7,15 @@ Structure (Planned):
 -Secrets
 -Azure
 -CICD
+
+----Environments
+-Python venv
+    -source venv/bin/activate
+    -deactivate
+
+
+----pip
+    -pip list -v
+
+----git
+    -git branch -av
