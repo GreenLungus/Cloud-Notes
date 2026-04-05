@@ -19,3 +19,7 @@ Structure (Planned):
 
 ----git
     -git branch -av
+
+----backend server
+    uvicorn {filename}:{appname} --reload
+    uvicorn backend:app --reload

@@ -1,11 +1,17 @@
-import flask
+from fastapi import FastAPI
 
-app = flask.Flask(__name__)
+app = FastAPI()
 
 
-@app.route('/')
-def hello():
-    return 'Hello, World!'
+@app.get("/")
+def read_root():
+    return {"Hello": "World!"}
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.get("/name")
+def getName():
+    return {"My Name is Computer!"}
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: str | None = None):
+    return {"item_id": item_id, "q": q}
+
