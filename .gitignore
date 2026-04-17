@@ -6,6 +6,17 @@ __pycache__/
 # C extensions
 *.so
 
+# Java / IntelliJ build output
+*.class
+out/
+target/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.vite/
+
 # Distribution / packaging
 .Python
 build/
@@ -182,9 +193,9 @@ cython_debug/
 .abstra/
 
 # Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#  and can be added to the global gitignore or merged into this file. However, if you prefer,
 #  you could uncomment the following to ignore the entire vscode folder
 # .vscode/
 
@@ -205,3 +216,55 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# =========================
+# IntelliJ / JetBrains
+# =========================
+.idea/
+*.iml
+out/
+
+# =========================
+# Java
+# =========================
+*.class
+target/
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+dist/
+build/
+.vite/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+
+# packaging
+*.egg-info/
+
+# =========================
+# Databases / local data
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
